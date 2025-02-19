@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid & Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+
+    }
+
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(8, 124, 170);
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .box {
+        background-color: rgb(255, 255, 255);
+        color: rgb(4, 2, 2);
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 8px;
+
+    }
+
+    @media(max-width:1000px) {
+        .flex-container {
+            flex-direction: row;
+        }
+    }
+</style>
+
+
+<body>
+    <h1 style="text-align: center;">Responsive Image Gallery (CSS Grid)</h1>
+    <p style="text-align: center;">Famous Ghibli Movies</p>
+    <div class="gallery">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/1.jpg" alt="Gallery Image">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/2.jpg" alt="Gallery Image">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/3.png.webp" alt="Gallery Image">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/4.jpg" alt="Gallery Image">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/5.jpg" alt="Gallery Image">
+        <img src="https://raw.github.com/Reham-Alsaedi/Week-1-Day-2-Assignment- /main/6.jpg" alt="Gallery Image">
+
+    </div>
+    
+    <h1 style="text-align: center;">Responsive Flexbox Layout</h1>
+    <p style="text-align: center;">Studio Ghibli is a famous Japanese animation studio founded in 1985 by</p>
+    <div class="flex-container">
+        <div class="box">Hayao Miyazaki</div>
+        <div class="box">Isao Takahata</div>
+        <div class="box">Toshio Suzuki</div>
+    </div>
+</body>
+
+</html>
